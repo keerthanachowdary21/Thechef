@@ -1,0 +1,43 @@
+### Get all posts
+GET http://localhost:3000/posts
+
+### Create a new post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "Sample Post",
+  "description": "This is a sample post description.",
+  "images": ["image1.jpg", "image2.png"],
+  "userId": 1
+}
+
+### Edit a post
+PUT http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "title": "Updated Post Title",
+  "description": "Updated post description.",
+  "images": ["updated1.jpg", "updated2.png"]
+}
+
+### Delete a post
+DELETE http://localhost:3000/posts/6
+
+### Get all users
+GET http://localhost:3000/users
+
+### Get all posts (simple list)
+GET http://localhost:3000/posts/all
+
+### EXTRA:- POST REQUEST where create a User
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "name": "Nisha",
+    "mobile_number": 2345678919,
+    "address": "Bangalore",
+    "post_count": 2
+}
