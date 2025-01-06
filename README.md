@@ -32,11 +32,17 @@ This is a backend application built using **Node.js** and **SQLite** for managin
 ### Access the following endpoints:
 
 `GET /posts/:`userId: Get all posts for a user.
+
 `POST /posts/:` Create a new post for a user.
+
 `PUT /posts/:`postId: Edit an existing post.
+
 `DELETE /posts/:`postId: Delete a post.
+
 `GET /users/: `Get all users.
+
 `POST /users/: `Create a new user.
+
 `DELETE /users/:`userId: Delete a user and their associated posts.
 ## Database Initialization
 
